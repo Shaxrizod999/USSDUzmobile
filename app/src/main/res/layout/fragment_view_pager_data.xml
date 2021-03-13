@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ViewPagerDataFragment">
+
+<androidx.cardview.widget.CardView
+
+    app:cardCornerRadius="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:background="#0D7AD1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+
+        android:id="@+id/tariflar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="30sp"
+        android:textColor="#F4DC04"
+        app:layout_constraintVertical_bias="0.01"
+        android:textStyle="bold"
+        android:text="Просто 10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/daqiqa"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintTop_toBottomOf="@id/tariflar"
+        android:src="@drawable/ic_baseline_phone_24"
+        android:backgroundTint="#F3DB0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/daqiqa1"
+        app:layout_constraintTop_toBottomOf="@id/daqiqa"
+        app:layout_constraintLeft_toLeftOf="@id/daqiqa"
+        app:layout_constraintRight_toRightOf="@id/daqiqa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="10 MIN"
+        app:layout_constraintVertical_bias="0.15"
+        android:textColor="#F3DB0B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/megabayt"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintTop_toBottomOf="@id/tariflar"
+        android:src="@drawable/ic_outline_language_24"
+        android:backgroundTint="#F3DB0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/daqiqa"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/megabayt1"
+        app:layout_constraintTop_toBottomOf="@id/megabayt"
+        app:layout_constraintLeft_toLeftOf="@id/megabayt"
+        app:layout_constraintRight_toRightOf="@id/megabayt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="10 MB"
+        app:layout_constraintVertical_bias="0.15"
+        android:textColor="#F3DB0B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/smslar"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintTop_toBottomOf="@id/tariflar"
+        android:src="@drawable/ic_baseline_chat_bubble_24"
+        android:backgroundTint="#F3DB0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/megabayt"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/smslar1"
+        app:layout_constraintTop_toBottomOf="@id/smslar"
+        app:layout_constraintLeft_toLeftOf="@id/smslar"
+        app:layout_constraintRight_toRightOf="@id/smslar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="10 SMS"
+        app:layout_constraintVertical_bias="0.15"
+        android:textColor="#F3DB0B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+
+        android:id="@+id/narx"
+        app:layout_constraintTop_toBottomOf="@id/megabayt1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="10 000 сум в месяц"
+        app:layout_constraintVertical_bias="0.3"
+        android:textColor="#13D1EA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

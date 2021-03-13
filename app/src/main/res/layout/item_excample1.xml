@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/fab"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon"
+            android:backgroundTint="#03A9F4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+
+
+        <LinearLayout
+
+            app:layout_constraintLeft_toRightOf="@id/fab"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="300dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_width="match_parent"
+                app:expansion_toggleOnClick="true"
+                app:expansion_layout="@id/expansion_layout"
+                app:expansion_headerIndicator="@id/headerIndicator"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintHeight_percent="0.4"
+                        app:layout_constraintVertical_bias="0"
+                        app:layout_constraintWidth_percent="0.9"
+                        app:layout_constraintHorizontal_bias="0"
+                        android:id="@+id/tarif_name"
+                        android:gravity="center_vertical"
+                        android:text="Oddiy 10"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+
+                        app:layout_constraintTop_toTopOf="@id/tarif_name"
+                        app:layout_constraintBottom_toBottomOf="@id/tarif_name"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/tarif_name"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/headerIndicator"
+                        app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/desc_tarif"
+                        android:text="Agar abonentda ADSL texnologiyasidan foydalangan holda IPTV xizmati
+mavjud bo'lsa, tarif rejasida ko'rsatilgan tezlikni ta'minlash uchun texnik
+imkoniyat UZTELECOM savdo idorasiga yozma ariza bilan belgilanadi."
+                        android:textSize="9dp"
+                        android:gravity="start"
+                        android:textColor="#000"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tarif_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"/>
+
+                    <LinearLayout
+
+                        app:layout_constraintVertical_bias="0"
+                        app:layout_constraintTop_toBottomOf="@id/desc_tarif"
+                        android:layout_width="match_parent"
+                        android:background="#9F9C9C"
+                        android:layout_height="1dp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+
+                android:id="@+id/expansion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:id="@+id/tarif_malumot"
+                        android:textColor="@color/black"
+                        android:clickable="false"
+                        android:textSize="10sp"
+                        android:layout_gravity="start"
+                        android:text="Agar abonentda ADSL texnologiyasidan foydalangan holda IPTV xizmati mavjud bo'lsa, tarif rejasida ko'rsatilgan tezlikni ta'minlash uchun texnik imkoniyat UZTELECOM savdo idorasiga yozma ariza bilan belgilanadi."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <Button
+
+                        android:text="Ulanish"
+
+                        app:layout_constraintTop_toBottomOf="@id/tarif_malumot"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginTop="10dp"
+                        android:textAllCaps="false"
+                        app:layout_constraintHorizontal_bias="0.8"
+                        android:backgroundTint="#00BCD4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

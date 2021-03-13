@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/boshSahifaFragment">
+
+    <fragment
+        android:id="@+id/boshSahifaFragment"
+        android:name="uz.android.ussduzmobile.fragments.BoshSahifaFragment"
+        android:label="fragment_bosh_sahifa"
+        tools:layout="@layout/fragment_bosh_sahifa" />
+    <fragment
+        android:id="@+id/ussdFragment"
+        android:name="uz.android.ussduzmobile.fragments.UssdFragment"
+        android:label="fragment_ussd"
+        tools:layout="@layout/fragment_ussd" />
+    <fragment
+        android:id="@+id/tariflarFragment"
+        android:name="uz.android.ussduzmobile.fragments.TariflarFragment"
+        android:label="TariflarFragment" />
+    <fragment
+        android:id="@+id/xizmatlarFragment"
+        android:name="uz.android.ussduzmobile.fragments.XizmatlarFragment"
+        android:label="XizmatlarFragment" />
+    <fragment
+        android:id="@+id/internetFragment"
+        android:name="uz.android.ussduzmobile.fragments.InternetFragment"
+        android:label="fragment_internet"
+        tools:layout="@layout/fragment_internet" />
+    <fragment
+        android:id="@+id/smsFragment"
+        android:name="uz.android.ussduzmobile.fragments.SmsFragment"
+        android:label="SmsFragment" />
+</navigation>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BoshSahifaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#059CDF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <ImageView
+
+            android:id="@+id/unnamed"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/unnamed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.18"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintWidth_percent="0.15" />
+
+        <TextView
+
+            android:id="@+id/uzmobile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="UZMOBILE"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.18"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintLeft_toRightOf="@id/unnamed"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+
+            android:id="@+id/milliy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="MILLIY OPERATOR"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintHorizontal_bias="0.74"
+            app:layout_constraintLeft_toLeftOf="@id/unnamed"
+            app:layout_constraintRight_toRightOf="@id/uzmobile"
+            app:layout_constraintTop_toBottomOf="@id/uzmobile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintWidth_percent="0.8"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintVertical_bias="0.76"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/fb1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="0.15"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:backgroundTint="#6CE2F1"
+                android:src="@drawable/ic_baseline_grid_3x3_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:id="@+id/ussd"
+                app:layout_constraintTop_toBottomOf="@id/fb1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/fb1"
+                app:layout_constraintRight_toRightOf="@id/fb1"
+                app:layout_constraintVertical_bias="0.1"
+                android:textSize="18sp"
+                android:text="USSD"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/fb2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fb1"
+                app:layout_constraintVertical_bias="0.15"
+                app:layout_constraintHorizontal_bias="0.27"
+                android:backgroundTint="#6CE2F1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:src="@drawable/ic_baseline_payment_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:id="@+id/tarif"
+                app:layout_constraintTop_toBottomOf="@id/fb2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/fb2"
+                app:layout_constraintRight_toRightOf="@id/fb2"
+                app:layout_constraintVertical_bias="0.1"
+                android:textSize="18sp"
+                android:text="Ta'rif"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/fb3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fb2"
+                app:layout_constraintVertical_bias="0.15"
+                app:layout_constraintHorizontal_bias="0.6"
+                android:backgroundTint="#6CE2F1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:src="@drawable/ic_baseline_miscellaneous_services_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:id="@+id/xizmat"
+                app:layout_constraintTop_toBottomOf="@id/fb3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/fb3"
+                app:layout_constraintRight_toRightOf="@id/fb3"
+                app:layout_constraintVertical_bias="0.1"
+                android:textSize="18sp"
+                android:text="Xizmat"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/fb4"
+                app:layout_constraintTop_toBottomOf="@id/ussd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:backgroundTint="#6CE2F1"
+                android:src="@drawable/ic_baseline_phone_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:id="@+id/minut"
+                app:layout_constraintTop_toBottomOf="@id/fb4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/fb4"
+                app:layout_constraintRight_toRightOf="@id/fb4"
+                app:layout_constraintVertical_bias="0.3"
+                android:textSize="18sp"
+                android:text="Minut"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/fb5"
+                app:layout_constraintTop_toBottomOf="@id/tarif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fb4"
+                app:layout_constraintVertical_bias="0.2"
+                app:layout_constraintHorizontal_bias="0.27"
+                android:backgroundTint="#6CE2F1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:src="@drawable/ic_outline_language_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:id="@+id/internet"
+                app:layout_constraintTop_toBottomOf="@id/fb5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/fb5"
+                app:layout_constraintRight_toRightOf="@id/fb5"
+                app:layout_constraintVertical_bias="0.3"
+                android:textSize="18sp"
+                android:text="Internet"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/fb6"
+                app:layout_constraintTop_toBottomOf="@id/xizmat"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/fb5"
+                app:layout_constraintVertical_bias="0.2"
+                app:layout_constraintHorizontal_bias="0.6"
+                android:backgroundTint="#6CE2F1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:src="@drawable/ic_baseline_miscellaneous_services_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:id="@+id/sms"
+                app:layout_constraintTop_toBottomOf="@id/fb6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/fb6"
+                app:layout_constraintRight_toRightOf="@id/fb6"
+                app:layout_constraintVertical_bias="0.3"
+                android:textSize="18sp"
+                android:text="SMS"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager.widget.ViewPager
+
+        android:id="@+id/viewPager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.24"
+        app:layout_constraintVertical_bias="0.24"
+        app:cardCornerRadius="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

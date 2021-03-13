@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Balans"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:id="@+id/balans_fragment"/>
+    <item
+        android:title="Operator"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        android:id="@+id/operator_fragment"/>
+    <item
+        android:title=""
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/boshsahifa_fragment"/>
+
+    <item
+        android:title="Yangiliklar"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:id="@+id/yangiliklar_fragment"/>
+    <item
+        android:title="Sozlamaler"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:id="@+id/sozlamaler_fragment"/>
+</menu>
